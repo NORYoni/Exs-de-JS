@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando DOM</title>
+    <style>
+        body{
+            background-color: rgb(61, 179, 139);
+            color: antiquewhite;
+            font-family: sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        //voce pode selecionar os objetos DOM pelas maneiras: Marca, ID, Nome, classe ou seletor
+        var p1 = window.document.getElementsByTagName('p')[0]
+        //o comando a cima selecionou o primeiro paragrafo pelo nome da tag
+        var d1 = window.document.getElementById('msg')
+         //o comando a cima selecionou a primeira div pelo id
+         var d = window.document.querySelector('div#msg')
+         d.innerHTML = 'Estou Aguardando'
+         d.style.background = 'blue'
+
+    </script>
+</body>
+</html>
